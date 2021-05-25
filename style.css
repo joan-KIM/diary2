@@ -1,12 +1,18 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: #F8F8F8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .todolist-wrapper{
-    background-color: bisque;
+    background-color: #ffffff;
     width: 30%;
     height: 32%;
+    border-radius: 0.5em;
+    border: 1px solid #EBE9F1;
+    color: #6E6B7B;
 }
 
 .todolist{
@@ -17,32 +23,51 @@ body{
 .input-task-container{
     box-sizing: border-box;
     width: 100%;
-    padding: 1em;
-    background-color: blue;
+    padding: 0.5em 1em;
+    /* background-color: blue; */
     display: flex;
+    border-bottom: 1px solid #EBE9F1;
 }
 
 .input-task{
-    width: 75%;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5em;
+    border-style: none;
 }
 
 .add-task-btn{
     display: block;
     margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 2em;
+    background-color: #EA5455;
+    color: #ffffff;
+    padding: 0 1.5em;
 }
 
 .task{
-    background-color:burlywood;
+    /* background-color:burlywood; */
     list-style: none;
-    padding:0.4em 1em;
+    padding:0.7em 1em;
     display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EBE9F1;
 }
 
 .material-icons{
     font-size: 18px;
+    color: #D8D6DE;
 }
 
 .delete-task-btn{
     display: block;
     margin-left: auto;
+}
+
+.checkbox{
+    margin-right:0.7em;
 }
