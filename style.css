@@ -39,7 +39,7 @@ body{
 }
 
 ::placeholder{
-    color: #D8D6DE;
+    color: #B9B9C3;
 }
 
 .add-task-btn{
@@ -75,4 +75,8 @@ body{
 
 .checkbox{
     margin-right:0.7em;
+}
+
+.checkbox:checked + label{
+    color: #B9B9C3;
 }
