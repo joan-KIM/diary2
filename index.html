@@ -11,17 +11,19 @@
 </head>
 
 <body>
-    <p>09</p>
-    <p>Sunday</p>
+    <div class = 'date'>
+        <p>09</p>
+        <p>Sunday</p>
+    </div>
     <p>To do List</p>
     <div class = 'todolist-wrapper'>
         <div class = 'input-task-container'>
-            <input type = 'text' placeholder = 'Task Title'>
+            <input type = 'text' placeholder = 'Task Title' class = 'input-task'>
             <button class = 'add-task-btn'>Add Task</button>
         </div>
-        <ul>
-            <li><input type = 'checkbox'>Search dashboard UI<button class = 'delete-task-btn'><span class = 'material-icons'>clear</span></button></li>
-            <li><input type = 'checkbox'>Design to do list<button class = 'delete-task-btn'><span class = 'material-icons'>clear</span></button></li>
+        <ul class = 'todolist'>
+            <li class = 'task'><input type = 'checkbox'>Search dashboard UI<button class = 'delete-task-btn'><span class = 'material-icons'>clear</span></button></li>
+            <li class = 'task'><input type = 'checkbox'>Design to do list<button class = 'delete-task-btn'><span class = 'material-icons'>clear</span></button></li>
         </ul>
     </div>
 </body>

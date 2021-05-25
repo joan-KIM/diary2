@@ -1,0 +1,48 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.todolist-wrapper{
+    background-color: bisque;
+    width: 30%;
+    height: 32%;
+}
+
+.todolist{
+    margin: 0;
+    padding: 0;
+}
+
+.input-task-container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    background-color: blue;
+    display: flex;
+}
+
+.input-task{
+    width: 75%;
+}
+
+.add-task-btn{
+    display: block;
+    margin-left: auto;
+}
+
+.task{
+    background-color:burlywood;
+    list-style: none;
+    padding:0.4em 1em;
+    display: flex;
+}
+
+.material-icons{
+    font-size: 18px;
+}
+
+.delete-task-btn{
+    display: block;
+    margin-left: auto;
+}
