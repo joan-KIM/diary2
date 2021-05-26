@@ -20,11 +20,10 @@ body{
     padding: 0;
 }
 
-.input-task-container{
+.input-container{
     box-sizing: border-box;
     width: 100%;
     padding: 0.5em 1em;
-    /* background-color: blue; */
     display: flex;
     border-bottom: 1px solid #EBE9F1;
 }
@@ -53,6 +52,7 @@ body{
     background-color: #EA5455;
     color: #ffffff;
     padding: 0 1.5em;
+    transition: width .3s ease, height .3s ease;
 }
 
 .task{
@@ -63,20 +63,42 @@ body{
     border-bottom: 1px solid #EBE9F1;
 }
 
-.material-icons{
+.delete-task-btn{
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
     font-size: 18px;
     color: #D8D6DE;
 }
 
-.delete-task-btn{
-    display: block;
-    margin-left: auto;
+.checkbox-input{
+    display: none;
 }
 
-.checkbox{
-    margin-right:0.7em;
+label{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #D8D6DE;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    cursor: pointer;
 }
 
-.checkbox:checked + label{
+.checkmark{
+    visibility: hidden;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.checkbox-input:checked + .checkbox{
+    background-color: #EA5455;
+    border: 1px solid #EA5455;
+}
+
+.checkbox-input:checked ~ span{
     color: #B9B9C3;
 }
+
+.checkbox-input:checked + .checkbox>.checkmark{
+    visibility: visible;
+}  

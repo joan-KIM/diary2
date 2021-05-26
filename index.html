@@ -20,20 +20,22 @@
     </div>
     <p>To do List</p>
     <div class = 'todolist-wrapper'>
-        <div class = 'input-task-container'>
+        <div class = 'input-container'>
             <input type = 'text' placeholder = 'Task Title' class = 'input-task'>
             <button class = 'add-task-btn'>Add Task</button>
         </div>
         <ul class = 'todolist'>
             <li class = 'task'>
-                <input type = 'checkbox' class = 'checkbox'>
-                <label>dashboard UI</label>
-                <span class = 'material-icons delete-task-btn'>clear</span>
+                <input type = 'checkbox' class = 'checkbox-input' id = 'task1'>
+                <label for = 'task1' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
+                <span>dashboard UI</span>
+                <i class = 'material-icons delete-task-btn'>clear</i>
             </li>
             <li class = 'task'>
-                <input type = 'checkbox' class = 'checkbox' checked>
-                <label>Design to do list</label>
-                <span class = 'material-icons delete-task-btn'>clear</span>
+                <input type = 'checkbox' class = 'checkbox-input' id = 'task2' checked>
+                <label for = 'task2' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
+                <span>Design to do list</span>
+                <i class = 'material-icons delete-task-btn'>clear</i>
             </li>
         </ul>
     </div>
