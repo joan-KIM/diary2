@@ -41,7 +41,14 @@ body{
     color: #B9B9C3;
 }
 
+.input-task:focus::placeholder{
+    padding-left: 0.4em;
+    transition: padding-left 0.2s ease;
+}
+
 .add-task-btn{
+    position: relative;
+    overflow: hidden;
     display: block;
     margin-left: auto;
     font-family: 'Montserrat', sans-serif;
@@ -52,8 +59,31 @@ body{
     background-color: #EA5455;
     color: #ffffff;
     padding: 0 1.5em;
-    transition: width .3s ease, height .3s ease;
+    transition: box-shadow .2s ease;
 }
+
+.add-task-btn:hover{
+    box-shadow: 0 3px 10px rgb(234, 84, 85, 0.5);
+}
+
+.add-task-btn:active, .add-task-btn:focus{
+    box-shadow: none;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
 
 .task{
     list-style: none;
@@ -69,6 +99,11 @@ body{
     cursor: pointer;
     font-size: 18px;
     color: #D8D6DE;
+}
+
+.delete-task-btn:hover{
+    color: #B9B9C3;
+    transition: color .3s ease;
 }
 
 .checkbox-input{
@@ -93,6 +128,7 @@ label{
 .checkbox-input:checked + .checkbox{
     background-color: #EA5455;
     border: 1px solid #EA5455;
+    box-shadow: 0 2px 5px rgb(234, 84, 85, 0.5);
 }
 
 .checkbox-input:checked ~ span{
@@ -102,3 +138,5 @@ label{
 .checkbox-input:checked + .checkbox>.checkmark{
     visibility: visible;
 }  
+
+
