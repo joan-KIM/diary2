@@ -16,30 +16,34 @@
 </head>
 
 <body>
-    <div class = 'date'>
-        <p>09</p>
-        <p>Sunday</p>
+    <div class = 'date-wrapper'>
+        <p class = 'date'>09</p>
+        <p class = 'day'>Sunday</p>
     </div>
-    <p>To do List</p>
+
     <div class = 'todolist-wrapper'>
-        <div class = 'input-container'>
-            <input type = 'text' placeholder = 'Task Title' class = 'input-task'>
-            <button class = 'add-task-btn'>Add Task</button>
+        <p class = 'todolist-header'>To do List</p>
+        <div class = 'todolist-container'>
+            <div class = 'input-container'>
+                <input type = 'text' placeholder = 'Task Title' class = 'input-task'>
+                <button class = 'add-task-btn'>Add Task</button>
+            </div>
+            <ul class = 'todolist'>
+                <li class = 'task'>
+                    <input type = 'checkbox' class = 'checkbox-input' id = 'task1'>
+                    <label for = 'task1' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
+                    <span>dashboard UI</span>
+                    <i class = 'material-icons delete-task-btn'>clear</i>
+                </li>
+                <li class = 'task'>
+                    <input type = 'checkbox' class = 'checkbox-input' id = 'task2' checked>
+                    <label for = 'task2' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
+                    <span>Design to do list</span>
+                    <i class = 'material-icons delete-task-btn'>clear</i>
+                </li>
+            </ul>
         </div>
-        <ul class = 'todolist'>
-            <li class = 'task'>
-                <input type = 'checkbox' class = 'checkbox-input' id = 'task1'>
-                <label for = 'task1' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
-                <span>dashboard UI</span>
-                <i class = 'material-icons delete-task-btn'>clear</i>
-            </li>
-            <li class = 'task'>
-                <input type = 'checkbox' class = 'checkbox-input' id = 'task2' checked>
-                <label for = 'task2' class = 'checkbox'><i class = 'checkmark material-icons'>done</i></label>
-                <span>Design to do list</span>
-                <i class = 'material-icons delete-task-btn'>clear</i>
-            </li>
-        </ul>
     </div>
+        
 </body>
 </html>
